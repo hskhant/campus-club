@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.campus_work1.Model.User;
+import com.example.campus_work1.view.ui.HomeActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -66,9 +67,13 @@ public class MainActivityHome extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
 
+
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                                        .setAction("Action", null).show();
+//                Intent intent = new Intent(MainActivityHome.this, HomeActivity.class);
+//                startActivity(intent);
+//                finish();
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
